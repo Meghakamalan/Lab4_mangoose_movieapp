@@ -1,0 +1,10 @@
+extends common/layout
+
+block layout-content 
+  .main-content 
+    h1.page-title Testing Mongoose
+    each movie in movies 
+      div 
+        h2 #{movie.title}
+        div Year : #{movie.year} 
+        div Rating: #{movie.rating} 
